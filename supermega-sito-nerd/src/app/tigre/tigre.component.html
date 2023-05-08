@@ -1,7 +1,10 @@
-<p>tigre works!</p>
-<button (click)="visualizza()">Visualizza Tigre</button>
+<button style="margin-left: 20px; margin-top: 20px" (click)="visualizza()" type="button" class="btn btn-warning">Tigre</button>
 
-<div *ngIf="data!=undefined">
-    {{data.name}}
-    <img src="{{data.image_uris.small}}">
+<div class="card" style="margin-left: 20px; margin-top: 20px; margin-right: 1300px; margin-bottom: 1300px" *ngIf="data!=undefined">
+    <div class="card-body"><a>Name: {{data.name}}</a><br></div>
+    <img src="{{data.image_uris.small}}"><br>
+    <a>Object: {{data.object}}</a><br>
+    <a>Name: {{data.name}}</a><br>
+    <a>Power: {{data.power}}</a><br>
+    <a>Colors: {{data.colors}}</a><br>
 </div>
