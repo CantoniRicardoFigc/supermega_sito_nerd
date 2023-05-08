@@ -1,0 +1,7 @@
+<p>tigre works!</p>
+<button (click)="visualizza()">Visualizza Tigre</button>
+
+<div *ngIf="data!=undefined">
+    {{data.name}}
+    <img src="{{data.image_uris.small}}">
+</div>
