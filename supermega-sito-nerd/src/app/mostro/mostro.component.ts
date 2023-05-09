@@ -15,7 +15,7 @@ export class MostroComponent {
   loading: boolean | undefined;
   mostro : Observable<Root> | undefined;
   constructor(public http: HttpClient) { }
-  visualizza(): void{
+  ngOnInit(): void{
    this.mostro = this.http.get<Root>('https://api.scryfall.com/cards/named?fuzzy=everquill-phoenix');
    this.mostro.subscribe(this.getData)
   }

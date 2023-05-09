@@ -15,7 +15,7 @@ export class DragoComponent {
   loading: boolean | undefined;
   drago: Observable<Root> | undefined;
   constructor(public http: HttpClient) { }
-  visua(): void {
+  ngOnInit(): void{
     this.drago = this.http.get<Root>('https://api.scryfall.com/cards/named?fuzzy=alabaster-dragon');
     this.drago.subscribe(this.getData)
   }

@@ -15,7 +15,7 @@ export class GuerrieroComponent {
   loading: boolean | undefined;
   guerriero : Observable<Root> | undefined;
   constructor(public http: HttpClient) { }
-  visua(): void{
+  ngOnInit(): void{
    this.guerriero = this.http.get<Root>('https://api.scryfall.com/cards/named?fuzzy=espada-certera-bantiana');
    this.guerriero.subscribe(this.getData)
   }

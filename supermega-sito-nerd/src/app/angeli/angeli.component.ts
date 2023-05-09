@@ -15,7 +15,7 @@ export class AngeliComponent {
   loading: boolean | undefined;
   angeli: Observable<Root> | undefined;
   constructor(public http: HttpClient) { }
-  visua(): void {
+  ngOnInit(): void{
     this.angeli = this.http.get<Root>('https://api.scryfall.com/cards/named?fuzzy=mentor-of-evos-isle');
     this.angeli.subscribe(this.getData)
   }
