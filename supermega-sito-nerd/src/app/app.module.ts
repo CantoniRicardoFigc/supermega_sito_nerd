@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { TigreComponent } from './tigre/tigre.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GuerrieroComponent } from './guerriero/guerriero.component';
+import { DragoComponent } from './drago/drago.component';
+import { MostroComponent } from './mostro/mostro.component';
+import { AngeliComponent } from './angeli/angeli.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TigreComponent,
-    GuerrieroComponent
+    GuerrieroComponent,
+    DragoComponent,
+    MostroComponent,
+    AngeliComponent
   ],
   imports: [
     BrowserModule,
