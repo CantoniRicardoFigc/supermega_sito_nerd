@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TigreComponent } from './tigre/tigre.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GuerrieroComponent } from './guerriero/guerriero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TigreComponent
+    TigreComponent,
+    GuerrieroComponent
   ],
   imports: [
     BrowserModule,
