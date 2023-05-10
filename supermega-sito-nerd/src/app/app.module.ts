@@ -9,6 +9,7 @@ import { GuerrieroComponent } from './guerriero/guerriero.component';
 import { DragoComponent } from './drago/drago.component';
 import { MostroComponent } from './mostro/mostro.component';
 import { AngeliComponent } from './angeli/angeli.component';
+import { CartaComponent } from './carta/carta.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AngeliComponent } from './angeli/angeli.component';
     GuerrieroComponent,
     DragoComponent,
     MostroComponent,
-    AngeliComponent
+    AngeliComponent,
+    CartaComponent
   ],
   imports: [
     BrowserModule,
