@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'supermega-sito-nerd';
+  constructor() {
+
+  }
+  ricercaApi(cartaCercata : HTMLInputElement) {
+    
+  }
 }
