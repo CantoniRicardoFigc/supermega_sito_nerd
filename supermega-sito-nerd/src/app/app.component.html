@@ -21,8 +21,11 @@
     </div>
   </div>
 </nav>
+
 <router-outlet></router-outlet>
+
 <div class="card" style="width: 220px; margin-left: 20px; margin-top: 20px;" *ngIf="ris!=undefined">
+  <div style="width: 220px; margin-left: 20px; margin-top: 20px"><h3>Searched card</h3></div>
   <div class="card-body"><h6>{{ris.name}}</h6></div>
   <img src="{{ris.image_uris.small}}"><br>
   <a>Object: {{ris.object}}</a><br>
