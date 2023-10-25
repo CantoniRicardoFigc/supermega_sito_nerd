@@ -12,6 +12,7 @@ export class AppComponent {
   cartaSearch !: String;
   obsCard !: Observable<Root>;
   ris !: Root;
+
   constructor(private http : HttpClient) {}
   
   ricercaApi(cartaCercata : HTMLInputElement) {

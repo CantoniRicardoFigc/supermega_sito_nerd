@@ -14,6 +14,7 @@ export class CartaComponent {
   data: Root | undefined;
   loading: boolean | undefined;
   obs_carta : Observable<Root> | undefined;
+
   constructor(private route: ActivatedRoute, public http: HttpClient) {
     this.route.paramMap.subscribe(this.getRouterParam);
   }
